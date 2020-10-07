@@ -32,7 +32,13 @@ $ pip install -r requirements.txt
 
 To run the application
 ```
-$ python app.py
+$ python3 app.py
+```
+
+To run the test files
+```
+$ python3 test_anagram.py
+$ python3 test_anagramStore.py
 ```
 Technologies used: 
  * Python 3.6.3
