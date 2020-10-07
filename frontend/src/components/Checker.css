@@ -1,0 +1,29 @@
+.submit-center {
+    margin: auto;
+    width: 15%;
+    min-width: 100px;
+}
+
+.card-padding {
+    padding: 4vh;
+    width: 90vw;
+    margin: auto;
+}
+
+.Yes {
+    padding: 10px;
+}
+
+.Yes h1{
+    color: green;
+    font-weight: 800;
+}
+
+.No {
+    padding: 10px;
+}
+
+.No h1{
+    color: red;
+    font-weight: 800;
+}
