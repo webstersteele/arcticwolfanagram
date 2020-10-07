@@ -2,7 +2,7 @@
 
 ## Front end
 
-To install the dependencies
+To install the dependencies (ensure you're in the frontend folder)
 ```
 $ npm i
 ```
@@ -11,21 +11,28 @@ To run the application
 ```
 $ npm start
 ```
+Test the application
+```
+$ npm start
+```
+
 Technologies used: 
  * React with Typescript/ES6
  * React-Bootstrap
  * Axios
+ * Jest
+ * React Testing Library
 
-## Back End - EDIT THIS
+## Back End
 
-To install the dependencies
+To install the dependencies (ensure you're in the backend folder)
 ```
-$ npm i
+$ pip install -r requirements.txt
 ```
 
 To run the application
 ```
-$ npm start
+$ python app.py
 ```
 Technologies used: 
  * Python 3.6.3
