@@ -2,6 +2,8 @@ import React from "react";
 import TopSearched from "../components/TopSearched";
 import { render, within} from "@testing-library/react";
 
+import 'mutationobserver-shim';
+
 import {ITableProp} from "../types/interfaces"
 
 function renderTopSearch(props: (ITableProp | undefined)) {

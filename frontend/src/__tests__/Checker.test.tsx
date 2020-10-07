@@ -2,6 +2,8 @@ import React from "react";
 import Checker from "../components/Checker";
 import {render} from "@testing-library/react";
 
+import 'mutationobserver-shim';
+
 import {IFormProp} from "../types/interfaces"
 
 function renderChecker(props: IFormProp) {

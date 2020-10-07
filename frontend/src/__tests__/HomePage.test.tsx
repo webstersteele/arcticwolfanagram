@@ -3,6 +3,8 @@ import HomePage from "../components/HomePage";
 import {render} from "@testing-library/react";
 import axios from 'axios';
 
+import 'mutationobserver-shim';
+
 jest.mock('axios');
 
 describe("<HomePage />", () => {
