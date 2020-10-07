@@ -4,15 +4,12 @@ import anagramStore
 
 class TestAnagramStore(unittest.TestCase):
     
-    def setUp(self):
-        self.dct = dict()
-        
-        self.dct[('listen', 'silent')] = 2
-        self.dct[('flow', 'wolf')] = 3
-        self.dct[('state', 'taste')] = 1
-    
     def test_addDict(self):
-        dctCopy = dict(self.dct)
+        dct = dict()
+        dct[('listen', 'silent')] = 2
+        dct[('flow', 'wolf')] = 3
+        dct[('state', 'taste')] = 1
+        dctCopy = dict(dct)
         
         anagramStoreTest = anagramStore.AnagramStore(dctCopy)
         
@@ -29,7 +26,11 @@ class TestAnagramStore(unittest.TestCase):
         self.assertEqual(dctCopy[('cider', 'cried')], 3)
     
     def test_updateDict(self):
-        dctCopy = dict(self.dct)
+        dct = dict()
+        dct[('listen', 'silent')] = 2
+        dct[('flow', 'wolf')] = 3
+        dct[('state', 'taste')] = 1
+        dctCopy = dict(dct)
         
         anagramStoreTest = anagramStore.AnagramStore(dctCopy)
         
@@ -42,7 +43,11 @@ class TestAnagramStore(unittest.TestCase):
         self.assertEqual(dctCopy[('flow', 'wolf')], 4)
     
     def test_getFrequentMoreThenDict(self):
-        dctCopy = dict(self.dct)
+        dct = dict()
+        dct[('listen', 'silent')] = 2
+        dct[('flow', 'wolf')] = 3
+        dct[('state', 'taste')] = 1
+        dctCopy = dict(dct)
         
         anagramStoreTest = anagramStore.AnagramStore(dctCopy)
         
@@ -60,7 +65,11 @@ class TestAnagramStore(unittest.TestCase):
         self.assertEqual(expectedReturnValue, actualReturnValue)
         
     def test_getFrequentSameAsDict(self):
-        dctCopy = dict(self.dct)
+        dct = dict()
+        dct[('listen', 'silent')] = 2
+        dct[('flow', 'wolf')] = 3
+        dct[('state', 'taste')] = 1
+        dctCopy = dict(dct)
     
         anagramStoreTest = anagramStore.AnagramStore(dctCopy)
         
@@ -78,7 +87,11 @@ class TestAnagramStore(unittest.TestCase):
         self.assertEqual(expectedReturnValue, actualReturnValue)
     
     def test_getFrequentLessThenDict(self):
-        dctCopy = dict(self.dct)
+        dct = dict()
+        dct[('listen', 'silent')] = 2
+        dct[('flow', 'wolf')] = 3
+        dct[('state', 'taste')] = 1
+        dctCopy = dict(dct)
     
         anagramStoreTest = anagramStore.AnagramStore(dctCopy)
         
@@ -94,7 +107,11 @@ class TestAnagramStore(unittest.TestCase):
         self.assertEqual(expectedReturnValue, actualReturnValue)
         
     def test_getFrequentZero(self):
-        dctCopy = dict(self.dct)
+        dct = dict()
+        dct[('listen', 'silent')] = 2
+        dct[('flow', 'wolf')] = 3
+        dct[('state', 'taste')] = 1
+        dctCopy = dict(dct)
     
         anagramStoreTest = anagramStore.AnagramStore(dctCopy)
         
